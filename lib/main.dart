@@ -44,6 +44,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   primary: Colors.red, // Especifica el color de fondo
+                  minimumSize: Size(200, 50), // Anchura y altura mínimas del botón
+                  fixedSize: Size(200, 50),
                 ),
                 child: Text("Play Sound 1"),
                 onPressed: () {
@@ -53,7 +55,9 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(height: 16), // Agrega un espacio entre los botones
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.blue, // Especifica el color de fondo
+                  primary: Colors.orange, // Especifica el color de fondo
+                  minimumSize: Size(200, 50), // Anchura y altura mínimas del botón
+                  fixedSize: Size(200, 50),
                 ),
                 child: Text("Play Sound 2"),
                 onPressed: () {
@@ -63,7 +67,9 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(height: 16), // Agrega un espacio entre los botones
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.blue, // Especifica el color de fondo
+                  primary: Colors.yellow, // Especifica el color de fondo
+                  minimumSize: Size(200, 50), // Anchura y altura mínimas del botón
+                  fixedSize: Size(200, 50),
                 ),
                 child: Text("Play Sound 3"),
                 onPressed: () {
@@ -73,7 +79,22 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(height: 16), // Agrega un espacio entre los botones
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
+                  primary: Colors.green, // Especifica el color de fondo
+                  minimumSize: Size(200, 50), // Anchura y altura mínimas del botón
+                  fixedSize: Size(200, 50),
+                ),
+                child: Text("Play Sound 4"),
+                onPressed: () {
+                  _playSound('sounds/note4.wav');
+
+                },
+              ),
+              SizedBox(height: 16), // Agrega un espacio entre los botones
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
                   primary: Colors.blue, // Especifica el color de fondo
+                  minimumSize: Size(200, 50), // Anchura y altura mínimas del botón
+                  fixedSize: Size(200, 50),
                 ),
                 child: Text("Play Sound 4"),
                 onPressed: () {
@@ -83,17 +104,9 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(height: 16), // Agrega un espacio entre los botones
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.blue, // Especifica el color de fondo
-                ),
-                child: Text("Play Sound 4"),
-                onPressed: () {
-                  _playSound('sounds/note4.wav');
-                },
-              ),
-              SizedBox(height: 16), // Agrega un espacio entre los botones
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.blue, // Especifica el color de fondo
+                  primary: Colors.blueGrey, // Especifica el color de fondo
+                  minimumSize: Size(200, 50), // Anchura y altura mínimas del botón
+                  fixedSize: Size(200, 50),
                 ),
                 child: Text("Play Sound 5"),
                 onPressed: () {
@@ -103,7 +116,9 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(height: 16), // Agrega un espacio entre los botones
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.blue, // Especifica el color de fondo
+                  primary: Colors.purple, // Especifica el color de fondo
+                  minimumSize: Size(200, 50), // Anchura y altura mínimas del botón
+                  fixedSize: Size(200, 50),
                 ),
                 child: Text("Play Sound 6"),
                 onPressed: () {
@@ -113,8 +128,11 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(height: 16), // Agrega un espacio entre los botones
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.blue, // Especifica el color de fondo
+                  primary: Colors.deepPurple,
+                  minimumSize: Size(200, 50), // Anchura y altura mínimas del botón
+                  fixedSize: Size(200, 50),   // Especifica el color de fondo
                 ),
+
                 child: Text("Play Sound 7"),
                 onPressed: () {
                   _playSound('sounds/note7.wav');
