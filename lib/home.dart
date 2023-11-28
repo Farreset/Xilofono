@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'main.dart';
 import 'horizontal.dart';
 import 'vertical.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(home());
 }
 
-class MyApp extends StatelessWidget {
+class home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -28,6 +27,11 @@ class PaginaPrincipal extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.grey, // Especifica el color de fondo
+                minimumSize: Size(200, 50), // Anchura y altura mínimas del botón
+                fixedSize: Size(200, 50),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -36,7 +40,13 @@ class PaginaPrincipal extends StatelessWidget {
               },
               child: Text('Vertical'),
             ),
+            SizedBox(height: 16),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.grey, // Especifica el color de fondo
+                minimumSize: Size(200, 50), // Anchura y altura mínimas del botón
+                fixedSize: Size(200, 50),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
