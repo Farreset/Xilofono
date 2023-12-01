@@ -28,7 +28,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  audioplayers: ^0.20.1
+  audioplayers: ^5.2.1
   flutter:
     sdk: flutter
 
@@ -53,21 +53,15 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
+  assets:
+      - assets/sounds/
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  assets:
-    - sounds/note1.wav
-    - sounds/note2.wav
-    - sounds/note3.wav
-    - sounds/note4.wav
-    - sounds/note5.wav
-    - sounds/note6.wav
-    - sounds/note7.wav
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
